@@ -38,6 +38,7 @@ def add():
         result = "Invalid input! Please enter numbers only."
     
     return redirect(url_for('result', result=result))
+    print("result")
 
 @app.route('/result')
 def result():
